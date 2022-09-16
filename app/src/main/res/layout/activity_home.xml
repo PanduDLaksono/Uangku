@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_Rangkuman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alatsi"
+            android:text="Rangkuman Bulan Ini"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_Pengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pengeluaran"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_Pemasukan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pemasukan"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/icon_logo" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imgBtnPemasukan"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:backgroundTint="@color/white"
+                            android:outlineProvider="none"
+                            android:outlineSpotShadowColor="#7A7171"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/income"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:id="@+id/txtMenuPemasukan"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="@string/add_pemasukan"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imgBtnPengeluaran"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/expense" />
+
+                        <TextView
+                            android:id="@+id/txtTambahPengeluaran"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_pengeluaran"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imgBtnDetailCashFlow"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/bill" />
+
+                        <TextView
+                            android:id="@+id/txtDetailCashFlow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/detail_cash"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imgBtnPengaturan"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/settings" />
+
+                        <TextView
+                            android:id="@+id/txtPengaturan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pengaturan"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </TableRow>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

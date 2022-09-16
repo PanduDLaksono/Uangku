@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Uangku</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="kembali">Kembali</string>
+    <string name="error_password">Password Salah</string>
+    <string name="error_username">Username Salah</string>
+    <string name="empty_username">Masukan Username</string>
+    <string name="empty_password">Masukan Password</string>
+    <string name="empty_field">Masukan Username &amp; Password</string>
+
+    <string name="empty_tanggal">Masukan tanggal</string>
+    <string name="empty_nominal">Masukan jumlah nominal</string>
+    <string name="empty_keterangan">Masukan keterangan</string>
+
+    <string name="pemasukan">Pemasukan :</string>
+    <string name="add_pemasukan">Tambah Pemasukan</string>
+
+    <string name="pengeluaran">Pengeluaran :</string>
+    <string name="add_pengeluaran">Tambah Pengeluaran</string>
+
+    <string name="pengaturan">Pengaturan</string>
+    <string name="detail_cash">Detail Cash Flow</string>
+
+    <string name="tanggal">Tangal :</string>
+    <string name="nominal">Nominal :</string>
+    <string name="keterangan">Keterangan :</string>
+    <string name="simpan">Simpan</string>
+
+    <string name="ganti_pass"><u>Ganti Password</u></string>
+    <string name="pass_old">Password Saat Ini</string>
+    <string name="pass_new">Password Baru</string>
+    <string name="input_pass_old">Masukan Password Lama</string>
+    <string name="input_pass_new">Masukan Password Baru</string>
+    <string name="about_app">Tentang Aplikasi</string>
+    <string name="apk_ini_dibuat">Aplikasi ini dibuat oleh :</string>
+    <string name="nama_biodata">Nama : Pandu Dwi Laksono</string>
+    <string name="nim_biodata">NIM : 1941723006</string>
+    <string name="tgl_biodata">Tanggal : 15 September 2022</string>
+
+    <string name="text_detail">Detail Cash Flow</string>
+
+
+
+
+
+</resources>

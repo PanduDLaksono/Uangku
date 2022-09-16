@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengeluaranActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTambahPengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/add_pengeluaran"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTanggalPengeluaran"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tanggal"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextDatePengeluaran"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTanggalPengeluaran"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/empty_tanggal"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/imgTanggalPengeluaran"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/txtTanggalPengeluaran"
+                android:layout_toRightOf="@id/editTextDatePengeluaran"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/calendar"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtNominalPengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/nominal"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNominalPengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/empty_nominal"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtKeteranganPengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/keterangan"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextKeteranganPengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/empty_keterangan"
+            android:inputType="textLongMessage|textPersonName"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnSimpanPengeluaran"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green"
+            android:text="@string/simpan" />
+
+        <Button
+            android:id="@+id/btnKembaliPengeluaran"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/kembali" />
+    </LinearLayout>
+</RelativeLayout>
